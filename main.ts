@@ -1,6 +1,9 @@
-import { Serie } from "./Serie.js";
+import { Serie } from './Serie.js';
+import { dataCourses } from './data.js';
 
-const seriesTbody: HTMLElement = document.getElementById('series')!; // Nodo tbody que tiene el id="courses"
+const seriesTbody: HTMLElement = document.getElementById("series")!; 
+
+renderCoursesInTable(dataCourses);
 
 function renderCoursesInTable(series: Serie[]): void {
   series.forEach(c => {
